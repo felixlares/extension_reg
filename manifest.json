@@ -1,0 +1,28 @@
+{
+    "manifest_version":2,
+    "name":"hack kit",
+    "description":"test hack kit",
+    "version":"1.0",
+    "content_scripts":[
+        {
+            "matches":["https://agenda.registraduria.gov.co/agenda/citaOficinas.php"],
+            "js":["index.js"]
+        },
+        {
+            "matches":["https://agenda.registraduria.gov.co/agenda/citaConfirmar.php"],
+            "js":["index2.js"]
+        }
+    ],
+    "icons":{
+        "16":"16.ico",
+        "48":"48.ico",
+        "128":"128.ico"
+    },
+    "browser_action":{
+        "default_icon":"16.ico",
+        "default_popup":"hackkit.html"
+    },
+    "permissions":[
+        "activeTab"
+    ]
+}
